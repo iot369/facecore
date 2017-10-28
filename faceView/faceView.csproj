@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCEA3C32-DD73-4DEE-ABD3-86CC1DF8A2FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>faceView</RootNamespace>
+    <AssemblyName>faceView</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\Dllimport\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\Dllimport\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\Dllimport\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="FaceCore.OpenPlatform.DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\cfsProject\FaceCore.OpenPlatform.DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Download.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcControl\Common.cs" />
+    <Compile Include="UcControl\UcCompar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcControl\UcCompar.Designer.cs">
+      <DependentUpon>UcCompar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcControl\UcDynamicCom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcControl\UcDynamicCom.Designer.cs">
+      <DependentUpon>UcDynamicCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcControl\UcDynamic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcControl\UcDynamic.Designer.cs">
+      <DependentUpon>UcDynamic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcControl\UcFaceCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcControl\UcFaceCheck.Designer.cs">
+      <DependentUpon>UcFaceCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcControl\UcIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcControl\UcIndex.Designer.cs">
+      <DependentUpon>UcIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcMenuItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcMenuItem.Designer.cs">
+      <DependentUpon>UcMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Api\API.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Api\Mac.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Api\ResourcesApi.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Api\Win32Private.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Api\Win32Public.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\BarCode\BarCodeToHTML.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Chart\Assistant.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Chart\OWCChart11.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Config\ConfigHelper-sufei.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Config\ConfigHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Control\BindDataControl.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Convert\ConvertHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Convert\StringPlus.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Cookie&amp;Session&amp;Cache\CacheHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Cookie&amp;Session&amp;Cache\CookieHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Cookie&amp;Session&amp;Cache\DataCache.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Cookie&amp;Session&amp;Cache\SessionHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Cookie&amp;Session&amp;Cache\SessionHelper2.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\CSV\CsvHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\DbHelperMySQL.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\DbHelperOleDb.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\DbHelperOra.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\DbHelperSQL.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\DbHelperSQLite.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\DbHelperSQLP.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\OracleHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DataBase\SQLHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Date\CNDate.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DEncrypt\DEncrypt.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DEncrypt\DESEncrypt.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DEncrypt\Encrypt.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DEncrypt\HashEncode.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DEncrypt\MySecurity.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DEncrypt\RSACryption.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Download_Up\DownLoadHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Download_Up\FileDown.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Download_Up\FileUp.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Download_Up\UpLoadFiles.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Excel\DataToExcel.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Excel\ExcelHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Excel\ExportExcel.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Excel\GridViewExport.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\File\DirFileHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\File\FileOperateHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\File\INIFileHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\FormatDate\TimeHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\FTP\FTPClient.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\FTP\FTPHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\FTP\FTPOperater.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\GridView\GridViewHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\HttpHelper\HttpCookieHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\HttpHelper\HttpHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Image\ImageClass.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Image\ImageDown.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Image\ImageUpload.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Image\PicDeal.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Internet&amp;Url\AdslHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Internet&amp;Url\IpHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Internet&amp;Url\NetHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Internet&amp;Url\UrlOper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\JsAlert\MessageBox.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\JsAlert\ShowMessage.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Json\ConvertJson.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\JS\JsHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\ConnectCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\ConnectResponse.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\DeleCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\ListCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\ListResponse.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\MailHeaders.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\MailHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\MailMessageEx.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\MailPoper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\MailSender.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\NoopCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\PassCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3Client.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3Command.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3Commands.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3Exception.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3ListItem.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3Response.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3Responses.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Pop3State.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\QuitCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\RetrCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\RetrResponse.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\RsetCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\SmtpServerHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\Stat.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\StatCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\StatResponse.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\TopCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mail\UserCommand.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mime\MediaTypes.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mime\MimeEntity.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mime\MimeHeaders.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mime\MimeReader.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Mime\QuotedPrintableEncoding.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\BasePage.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\HTMLHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\HttpProc.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\JavaScriptPlus.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\PageHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\Utility.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Page\WebSitePathHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\PinYin\EcanConvertToCh.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\PinYin\PinYin.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Properties\AssemblyInfo.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Random\BaseRandom.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Random\RandomHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Regex\RegexHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\ResourceManager\AppMessage.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\ResourceManager\ResourceManager.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\ResourceManager\ResourceManagerWrapper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\ResourceManager\Resources.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Rmb\RMB.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\SegList\SegList.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Serialize\Serialize.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Serialize\SerializeHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Sound\MediaHandler.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Sqlhelper\SqlHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\String\QueryString.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\String\StringHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\System\SysHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Validate&amp;Tool\FormulaExpress.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Validate&amp;Tool\PageValidate.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Validate&amp;Tool\Tools.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Validate&amp;Tool\ValidateImg.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Video\VideoConvert.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\XML\XmlHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\XML\XMLProcess.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Yzm\YZMHelper.cs" />
+    <Compile Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\Zip\SharpZip.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UcControl\UcCompar.resx">
+      <DependentUpon>UcCompar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcControl\UcDynamicCom.resx">
+      <DependentUpon>UcDynamicCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcControl\UcDynamic.resx">
+      <DependentUpon>UcDynamic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcControl\UcFaceCheck.resx">
+      <DependentUpon>UcFaceCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcControl\UcIndex.resx">
+      <DependentUpon>UcIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcMenuItem.resx">
+      <DependentUpon>UcMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="最新版C#基类库大全苏飞版源码\最新Asp.Net源码下载.url" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Com.Facecore.platform.Common\Com.Facecore.platform.Common.csproj">
+      <Project>{3fef20c0-be81-4b5b-a5f4-f8d46cd92510}</Project>
+      <Name>Com.Facecore.platform.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Com.Facecore.platform\Com.Facecore.platform.csproj">
+      <Project>{bf6b37f3-c2da-4f78-98a7-c3383d6c93b0}</Project>
+      <Name>Com.Facecore.platform</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\button\下拉箭头.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\关闭-点击.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\关闭.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\加载-人脸检测.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\加载-点击-人脸检测.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\加载摄像头-点击.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\加载摄像头.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\加载框-人脸检测.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\加载选框-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\开始比对-人脸比对认证.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\开始比对-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\开始比对-点击-人脸比对认证.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\开始比对-点击-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\拍照-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\拍照-点击-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\选择图片-点击.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\选择图片.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\选择照片-人脸比对认证.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\选择照片-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\选择照片-点击-人脸比对认证.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\button\选择照片-点击-动态人脸比对.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dfacecheck.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dfacecheck_click.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dfacecom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dfacecom_click.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\facecheck.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\facecheck_click.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\facecom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\facecom_click.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\logo-facecore.png" />
+    <Content Include="Images\offlinehigh.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\offlinehigh_click.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="最新版C#基类库大全苏飞版源码\16Aspx源码必读.txt" />
+    <Content Include="最新版C#基类库大全苏飞版源码\16aspx源码说明.txt" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\Excel.dll" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\itextsharp.dll" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\Maticsoft.DBUtility.dll" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\MySql.Data.dll" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\OWC10Chart.dll" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\bin\Debug\System.Data.SQLite.DLL" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\DotNet.Utilities.csproj" />
+    <Content Include="最新版C#基类库大全苏飞版源码\DotNet.Utilities\ResourceManager\Sample.xml" />
+    <Content Include="最新版C#基类库大全苏飞版源码\from.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

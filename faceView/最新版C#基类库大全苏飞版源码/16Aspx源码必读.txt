@@ -1,0 +1,274 @@
+最新版C#基类库大全苏飞版源码
+C#基类库大全苏飞版源码
+这里面大部分超初是网上收集的，但是我在发布之前会做一些简单的修改，帮助大家理解，最少也会增加一些注释之类的，例子一定会有的。像里面的HttpHelper，SqlHelper，还有其它的一些帮助类，是我自己的作品希望大家支持
+如果大家特别喜欢那个类的话，可以回复我，我会预先更新这个类，以方便 大家的使用。
+C#基础类库
+--------------------------------------------------------------------------------
+1.Chart图形
+Assistant创建显示图像的标签和文件
+OWCChart统计图的封装类
+2.Cookie&amp;Session&amp;Cache缓存帮助类 
+CacheHelper&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#操作缓存的帮助类，实现了怎么设置缓存，怎么取缓存，怎么清理缓存等方法，只需要调用方法就可以实现
+CookieHelper&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#操作Cookie的帮助类，添加Cookie，删除Cookie，修改Cookie，清理Cookie
+SessionHelper&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#关于Session的操作，获取Session，设置Session，删除Session使用方便，只需要调用方法就可以了
+SessionHelper2 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#关于Session的一些高级操作，比如取Session对象，取Session数据等等
+3.CSV文件转换
+CsvHelper&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSV文件导入DataTable和DataTable导出到Csv文件等操作
+4.DEncrypt&nbsp; 加密/解密帮助类
+DEncrypt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#DEncrypt加密/DEncrypt解密帮助类 ，多种方式，可以设置Key
+DESEncrypt&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#DESEncrypt加密/DESEncrypt解密帮助类 ，多种方式，可以设置Key
+Encrypt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#Encrypt--Encrypt加密/Encrypt解密/附加有MD5加密，个人感觉很不错的一个加密类
+HashEncode&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 哈希加密帮助类，得到随机哈希加密字符串，随机哈希数字加密等
+MySecurity&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MySecurity--Security安全加密/Security Base64/Security文件加密，以及一些常用的操作方法
+RSACryption&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSACryption--RSA加密/RSA解密字符串 RSA加密应用最多是银行接口，这里的方法可以直接使用哦
+5.FTP操作类
+FTPClient　　
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTPClient--FTP操作帮助类，FTP上传，FTP下载，FTP文件操作，FTP目录操作
+FTPHelper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTPHelper－FTP帮助类,FTP常用操作方法，添加文件，删除文件等
+FTPOperater&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTP操作帮助类，方法比较多，比较实用
+6.JS操作类
+JsHelper&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JsHelper--Javascript操作帮助类，输出各种JS方法，方便不懂JS的人使用，减少代码量
+7.JSON 转化类
+ConvertJson 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; List转成Json|对象转成Json|集合转成Json|DataSet转成Json|DataTable转成Json|DataReader转成Json等
+8.Mime
+MediaTypes&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 电子邮件类型帮助类，规定是以Xml，HTML还是文本方式发送邮件
+MimeEntity&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mime实体帮助类
+MimeHeaders&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mime的Header帮助类
+MimeReader&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mime读取帮助类
+QuotedPrintableEncoding&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mimeEncoding帮助类
+9.PDF&nbsp; 转化类
+PDFOperation&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PDFOperation--C#PDF文件操作帮助类 类主要功能有1.构造函数2.私有字段3.设置字体4.设置页面大小
+5.实例化文档6.打开文档对象7.关闭打开的文档8.添加段落9.添加图片10.添加链接、点 等功能
+10.ResourceManager 操作类
+AppMessage&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; app消息格式化类，返加字符串帮助类
+ResourceManager
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#一个操作Resource的帮助类
+ResourceManagerWrapper
+Resources&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 操作Resources的帮助类，使用Api的方式
+Sample.xml
+11.XML操作类
+XmlHelper&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 操作Xml文档的帮助类，主要是添加，删除，修改，查询节点的操作和操作后进行保存的功能。
+XMLProcess
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 操作Xml文档的帮助类，主要是添加，删除，修改，查询节点的操作的功能。
+12.弹出消息类
+MessageBox
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JS弹出信息帮助类
+ShowMessageBox
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 相对于MessageBox更丰富的提示类
+13.导出Excel 操作类
+DataToExcel&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 从&ldquo;Excel导出数据的帮助类
+ExcelHelper&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 导出到文件，导出一部分集合，从DataTable中操作等
+ExportExcel&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主要功能如下1.将整个网页导出来Excel 2.将GridView数据导出Excel
+GridViewExport
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主要功能:将整GridView的数据导出到Excel中关增加一个效果线做美化
+14.分词辅助类
+SegList 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C#SegList分词辅助类,帮助类
+15.汉字转拼音
+EcanConvertToCh C#将汉字转成拼音
+PinYin取汉字拼音的首字母，只要你输入一个汉字，或者是多个汉字就会取出相应的道字母，主要是方便查询使用的
+复制代码16.配置文件操作类
+ConfigHelper&nbsp;&nbsp;&nbsp; 1.根据Key取Value值
+&nbsp;&nbsp;&nbsp; 2.根据Key修改Value
+&nbsp;&nbsp;&nbsp; 3.添加新的Key ，Value键值对
+&nbsp;&nbsp;&nbsp; 4.根据Key删除项
+复制代码17.日历
+CNDate&nbsp;&nbsp;&nbsp; 1.传回公历y年m月的总天数
+&nbsp;&nbsp;&nbsp; 2.根据日期值获得周一的日期
+&nbsp;&nbsp;&nbsp; 3.获取农历
+复制代码18.上传下载
+DownLoadHelper输出硬盘文件，提供下载 支持大文件、续传、速度限制、资源占用小
+复制代码FileDown&nbsp;&nbsp;&nbsp; 1.参数为虚拟路径
+&nbsp;&nbsp;&nbsp; 2.获取物理地址
+&nbsp;&nbsp;&nbsp; 3.普通下载
+&nbsp;&nbsp;&nbsp; 4.分块下载
+&nbsp;&nbsp;&nbsp; 5.输出硬盘文件，提供下载 支持大文件、续传、速度限制、资源占用小
+复制代码FileUp1.把上传的文件转换为字节数组
+2.流转化为字节数组
+2.上传文件根据FileUpload控件上传
+3.把Byte流上传到指定目录并保存为文件
+复制代码UpLoadFiles
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 页面专用类
+19.时间操作类
+DateFormat返回每月的第一天和最后一天
+复制代码TimeHelper&nbsp;&nbsp;&nbsp; 1.将时间格式化成 年月日 的形式,如果时间为null，返回当前系统时间
+&nbsp;&nbsp;&nbsp; 2.将时间格式化成 时分秒 的形式,如果时间为null，返回当前系统时间
+&nbsp;&nbsp;&nbsp; 3.把秒转换成分钟
+&nbsp;&nbsp;&nbsp; 4.返回某年某月最后一天
+&nbsp;&nbsp;&nbsp; 5.返回时间差
+&nbsp;&nbsp;&nbsp; 6.获得两个日期的间隔
+&nbsp;&nbsp;&nbsp; 7.格式化日期时间
+&nbsp;&nbsp;&nbsp; 8.得到随机日期
+复制代码20.视频转换类
+VideoConvert1.获取文件的名字
+2.获取文件扩展名
+3.获取文件类型
+4.视频格式转为Flv
+5.生成Flv视频的缩略图
+6.转换文件并保存在指定文件夹下
+7.转换文件并保存在指定文件夹下
+8.运行mencoder的视频解码器转换
+复制代码21.随机数类
+BaseRandom1.产生随机字符
+2.产生随机数
+3.在一定范围内产生随机数
+复制代码RandomHelper1.生成一个指定范围的随机整数，该随机数范围包括最小值，但不包括最大值
+2.生成一个0.0到1.0的随机小数
+3.对一个数组进行随机排序
+4. 一：随机生成不重复数字字符串&nbsp;
+5.方法二：随机生成字符串（数字和字母混和）
+6.从字符串里随机得到，规定个数的字符串.
+复制代码22.条形码
+BarCodeToHTML 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 本类是个条码生成类，大家可根据需要自己设置，非常好用
+23.图片
+ImageClass 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主要功能有：缩略图片，图片水印，文字水印，调整光暗，反色处理，浮雕处理，拉伸处理，左右翻转，上下翻转，
+压缩图片，图片灰度化，转换为黑白图片，获取图片中的各帧
+ImageDown
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 主要功能，把图片下载到本地
+ImageUpload&nbsp; 图片上传并进行缩略图处理
+24.网络
+NetHelper
+25.文件操作类
+DirFileHelper
+FileOperateHelper
+INIFile
+26.序列化
+Serialize&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 序列化帮助类，还有例子
+SerializeHelper 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 序列化帮助类，Xml序列化，Json序列化,SoapFormatter序列化,BinaryFormatter序列化
+27.压缩解压缩
+SharpZip
+28.验证码
+YZMHelper
+Captcha 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 验证码类，一个很个性的验证码类
+29.页面辅助类
+HTMLHelper
+UploadEventArgs
+JavaScriptPlus
+PageHelper
+30.邮件
+MailHelper
+MailPoper
+MailSender
+SmtpServerHelper
+31.邮件2
+ConnectCommand
+ConnectResponse
+DeleCommand
+ListCommand
+ListResponse
+MailHeaders
+MailMessageEx
+NoopCommand
+PassCommand
+Pop3Client
+Pop3Command
+Pop3Commands
+Pop3Exception
+Pop3ListItem
+Pop3Response
+Pop3Responses
+Pop3State
+QuitCommand
+RetrCommand
+RetrResponse
+RsetCommand
+Stat
+StatCommand
+StatResponse
+TopCommand
+UserCommand
+32.正则表达式
+RegexHelper
+33.字符串
+StringHelper
+34.其它
+BasePage
+BindDataControl
+ConvertHelper
+DataCache
+FormulaExpress
+GridViewHelper
+IpHelper
+MediaHandler
+PageValidate
+PicDeal
+QueryString
+Rmb
+StringPlus
+SysHelper
+Tools
+UrlOper
+Utility
+ValidateImg
+WebSitePathHelper
+
+本源码由16Aspx调测并整理
+商业版资源请在作者或者16Aspx授权范围内使用，否则后果自负！
+如需转载免费版请注明作者信息及来源，以示对他人劳动成果的尊重！
+获得更有效最新的帮助技术支持看这里：http://www.16aspx.com/ 
+
+		 ╭═══════════════╮
+                ║      .Net源码 控件专业站      ║
+  ╭══════┤     http://www.16aspx.com     ├═════╮
+  ║            ║论坛:http://bbs.16aspx.com     ║           
+  ║            ╰═══════════════ ╯           ║
+　║                                                          ║
+  ║                                                          ║
+　║16Aspx声明：                                              ║
+  ║   1) 本站不保证所提供软件或程序的完整性和安全性。        ║
+  ║   2) 转载本站提供的资源请勿删除本说明文件。              ║
+  ║   3) 本站源码为网上搜集或网友提供，如果涉及或侵害到您的版║
+  ║      请立即写信通知我们。                                ║
+  ║   4) 本站提供代码只可供研究使用，请在下载24小时内删除,   ║
+  ║      切勿用于商业用途，由此引起一切后果与本站无关。      ║
+  ║   5) 源码后续升级或修补，我们会在该源码评论中发布！      ║
+　║                                                          ║
+  ║                                                          ║
+　║项目承接：Asp.Net网站,Asp.Net管理系统开发,Winform系统开发 ║
+  ║          Silverlight、WPF开发,各类管理系统工具开发       ║
+  ║                                                          ║
+  ║网站广告投放：QQ: 330199865，Email: amomzk@hotmail.com    ║
+  ║                                                          ║
+  ║             本站专注于C# .NET技术讨论                    ║
+  ║           联系方式 : amomzk@hotmail.com                  ║
+  ║    ╭───────────────────────╮    ║
+  ╰══┤ .Net源码专业站 http://www.16aspx.com          ├══╯
+        ╰───────────────────────╯
+友情提示:
+    一般数据库文件默认在DB_16aspx文件夹下
+    更多使用帮助和协议请浏览http://www.16aspx.com/
+    以上相关内容变更请以16Aspx官方网站最终显示为准
+
+
